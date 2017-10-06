@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/root"
+        android:fillViewport="true"
+        android:background="@color/transparent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="65dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:background="@color/transparent"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center"
+            android:maxLength="160"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/title"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="3dp"
+            android:background="@color/transparent"
+            android:textSize="14sp" />
+        <RelativeLayout
+            android:id="@+id/linkCard"
+            android:layout_width="268dp"
+            android:layout_height="336dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/description"
+            android:elevation="5dp"
+            android:alpha=".5">
+            <TextView
+                android:id="@+id/linkStaticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:lineSpacingExtra="5dp" />
+            <Button
+                android:id="@+id/linkButton"
+                android:layout_width="221dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:text="add link"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/linkSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="true"
+                android:text="skip"
+                android:alpha=".5"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:id="@+id/linkFinishContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/linkImage"
+                    android:layout_height="126dp"
+                    android:layout_width="126dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/linkDescription"
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_below="@id/linkImage"
+                    android:gravity="center_horizontal"
+                    android:maxLines="3"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+                    <TextView
+                        android:id="@+id/linkFinishText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="looks great"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/linkCheckImage"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/photoCard"
+            android:layout_width="300dp"
+            android:layout_height="376dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/description"
+            android:elevation="10dp">
+            <TextView
+                android:id="@+id/photoStaticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:lineSpacingExtra="5dp" />
+            <Button
+                android:id="@+id/photoButton"
+                android:layout_width="221dp"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:text="add photo"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/photoSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="true"
+                android:text="skip"
+                android:alpha=".5"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:id="@+id/photoFinishContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/photoImage"
+                    android:layout_height="126dp"
+                    android:layout_width="126dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/photoDescription"
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_below="@id/photoImage"
+                    android:gravity="center_horizontal"
+                    android:maxLines="3"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+                    <TextView
+                        android:id="@+id/photoFinishText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="looks great"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:id="@+id/photoCheckImage"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
